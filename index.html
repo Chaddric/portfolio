@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cedric Mandawe — IT Student &amp; Aspiring Developer</title>
+  <meta name="description" content="Portfolio of Cedric (Ced) Mandawe, a fourth-year Information Technology student at Cebu Eastern College interested in software development, artificial intelligence, and game development.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('ced-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="app">
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+      <div class="side-top">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">CM</span>
+          <span class="brand-text">
+            <strong>Ced</strong>
+            <small>BSIT &middot; 4th year</small>
+          </span>
+        </a>
+
+        <div class="side-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.1"/><path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 14.3A8.4 8.4 0 0 1 9.7 3.9a8.5 8.5 0 1 0 10.4 10.4Z"/></svg>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="side-nav" aria-label="Open menu">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="side-nav" id="side-nav" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html"><span class="n">01</span>Home</a></li>
+          <li><a class="nav-link" href="about.html"><span class="n">02</span>About</a></li>
+          <li><a class="nav-link" href="projects.html"><span class="n">03</span>Projects</a></li>
+          <li><a class="nav-link" href="contact.html"><span class="n">04</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="side-foot">
+        <p class="availability"><span class="pulse-dot" aria-hidden="true"></span>Open to internships</p>
+        <a class="side-email" href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+        <div class="side-links">
+          <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="side-fine">&copy; <span class="year">2026</span> Cedric Mandawe</p>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <div class="main">
+      <main id="main">
+        <section class="hero">
+          <div class="wrap">
+            <div class="hero-grid">
+              <div class="hero-copy">
+                <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>Cebu City &middot; Open to internships</p>
+                <h1 class="hero-title">Hi, I'm <span class="accent">Ced</span>.<br>I turn ideas into working software.</h1>
+                <p class="hero-lead">
+                  Fourth-year Information Technology student at Cebu Eastern College. I'm interested in
+                  artificial intelligence and software development, and I learn best by experimenting with
+                  new tools and building things that actually run.
+                </p>
+                <div class="hero-actions">
+                  <a class="btn" href="projects.html">
+                    See my projects
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+                  </a>
+                  <a class="btn btn-ghost" href="about.html">More about me</a>
+                </div>
+              </div>
+
+              <figure class="hero-photo">
+                <img src="images/profile.jpg" alt="Portrait of Cedric Mandawe" width="960" height="960">
+              </figure>
+            </div>
+
+            <dl class="facts">
+              <div class="fact">
+                <dt>Currently</dt>
+                <dd>4th year BSIT<br>Cebu Eastern College</dd>
+              </div>
+              <div class="fact">
+                <dt>Toolkit</dt>
+                <dd>C, C++, Godot, Blender</dd>
+              </div>
+              <div class="fact">
+                <dt>Looking for</dt>
+                <dd>Internship opportunities</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <!-- ================= FOCUS ================= -->
+        <section class="section">
+          <div class="wrap">
+            <div class="section-head reveal">
+              <div>
+                <span class="section-kicker">Focus</span>
+                <h2 class="section-title">What I spend my time on</h2>
+              </div>
+            </div>
+
+            <div class="rows reveal">
+              <div class="row">
+                <span class="row-num">01</span>
+                <h3 class="row-title">Software development</h3>
+                <p class="row-text">
+                  Writing programs in C and C++, and working through a problem until the code behaves
+                  the way it should.
+                </p>
+              </div>
+              <div class="row">
+                <span class="row-num">02</span>
+                <h3 class="row-title">Game development</h3>
+                <p class="row-text">
+                  Using Godot and Blender to build 3D scenes, assets, and mechanics &mdash; from the first
+                  blockout to something playable.
+                </p>
+              </div>
+              <div class="row">
+                <span class="row-num">03</span>
+                <h3 class="row-title">Artificial intelligence</h3>
+                <p class="row-text">
+                  Exploring how AI fits into real systems, including the research behind an IT
+                  career-assessment project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= SELECTED WORK ================= -->
+        <section class="section section-alt">
+          <div class="wrap">
+            <div class="section-head reveal">
+              <div>
+                <span class="section-kicker">Selected work</span>
+                <h2 class="section-title">Coursework I'm proud of</h2>
+              </div>
+              <a class="link-arrow" href="projects.html">
+                All projects
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+
+            <div class="work-list">
+              <article class="work reveal">
+                <figure class="work-media">
+                  <img src="images/project-1.png" alt="UniMart campus marketplace homepage" width="948" height="592" loading="lazy">
+                </figure>
+                <div class="work-body">
+                  <p class="work-kicker">Academic project</p>
+                  <h3 class="work-title">UniMart</h3>
+                  <p class="work-desc">
+                    A campus marketplace where students list, browse, and buy items within their school
+                    community.
+                  </p>
+                  <ul class="tag-list" aria-label="Technologies used">
+                    <li class="tag">Django</li>
+                    <li class="tag">Python</li>
+                    <li class="tag">Tailwind CSS</li>
+                  </ul>
+                  <a class="link-arrow" href="projects.html#unimart">
+                    View project
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="work reveal">
+                <figure class="work-media">
+                  <img src="images/project-2.jpg" alt="Honey, I'm Home title screen" width="1600" height="900" loading="lazy">
+                </figure>
+                <div class="work-body">
+                  <p class="work-kicker">Game prototype</p>
+                  <h3 class="work-title">Honey, I'm Home</h3>
+                  <p class="work-desc">
+                    A first-person horror prototype with puzzles, a stalker, and PS1-style visuals,
+                    built in Godot.
+                  </p>
+                  <ul class="tag-list" aria-label="Technologies used">
+                    <li class="tag">Godot</li>
+                    <li class="tag">GDScript</li>
+                    <li class="tag">Blender</li>
+                  </ul>
+                  <a class="link-arrow" href="projects.html#honey-im-home">
+                    View project
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="work reveal">
+                <figure class="work-media">
+                  <img src="images/project-3.png" alt="TechPath AI career assessment screen flow" width="1653" height="553" loading="lazy">
+                </figure>
+                <div class="work-body">
+                  <p class="work-kicker">Research project</p>
+                  <h3 class="work-title">AI Career Assessment</h3>
+                  <p class="work-desc">
+                    A research project exploring AI-driven career recommendations for IT students.
+                  </p>
+                  <ul class="tag-list" aria-label="Technologies and skills">
+                    <li class="tag">Artificial Intelligence</li>
+                    <li class="tag">Research</li>
+                    <li class="tag">UI Design</li>
+                  </ul>
+                  <a class="link-arrow" href="projects.html#career-assessment">
+                    View project
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="wrap">
+          <div class="cta reveal">
+            <div>
+              <h2>Looking for an intern who learns fast?</h2>
+              <p>I'm after a place where I can contribute to real work, learn from a team, and get better every week.</p>
+            </div>
+            <a class="btn" href="mailto:cjrmandawe@gmail.com">
+              Email me
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <p>&copy; <span class="year">2026</span> Cedric John Raven Mandawe</p>
+          <p>
+            <a href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+            &middot;
+            <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

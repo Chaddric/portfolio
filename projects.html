@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Cedric Mandawe</title>
+  <meta name="description" content="Coursework projects by Cedric Mandawe: UniMart campus marketplace, the Honey I'm Home game prototype, and an AI-powered IT career assessment system.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('ced-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-top">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">CM</span>
+          <span class="brand-text">
+            <strong>Ced</strong>
+            <small>BSIT &middot; 4th year</small>
+          </span>
+        </a>
+
+        <div class="side-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.1"/><path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 14.3A8.4 8.4 0 0 1 9.7 3.9a8.5 8.5 0 1 0 10.4 10.4Z"/></svg>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="side-nav" aria-label="Open menu">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="side-nav" id="side-nav" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html"><span class="n">01</span>Home</a></li>
+          <li><a class="nav-link" href="about.html"><span class="n">02</span>About</a></li>
+          <li><a class="nav-link" href="projects.html"><span class="n">03</span>Projects</a></li>
+          <li><a class="nav-link" href="contact.html"><span class="n">04</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="side-foot">
+        <p class="availability"><span class="pulse-dot" aria-hidden="true"></span>Open to internships</p>
+        <a class="side-email" href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+        <div class="side-links">
+          <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="side-fine">&copy; <span class="year">2026</span> Cedric Mandawe</p>
+      </div>
+    </aside>
+
+    <div class="main">
+      <main id="main">
+        <section class="page-hero">
+          <div class="wrap">
+            <p class="eyebrow">Projects</p>
+            <h1 class="page-title">Three projects, one habit: finishing.</h1>
+            <p class="page-lead">
+              Coursework from the last few years &mdash; a marketplace, a game prototype, and a research
+              project. Each one started as an assignment and ended up teaching me something the last
+              one hadn't.
+            </p>
+          </div>
+        </section>
+
+        <div class="wrap">
+          <!-- ============ UNIMART ============ -->
+          <article class="project reveal" id="unimart">
+            <figure class="project-media">
+              <img src="images/project-1.png" alt="UniMart campus marketplace homepage" width="948" height="592" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <p class="project-kicker">Academic project</p>
+              <h2>UniMart</h2>
+              <p class="project-summary">
+                A campus marketplace web application built for students to buy and sell items within
+                their school community. Users can list products with photos, browse and filter by
+                category, and message each other about an item.
+              </p>
+
+              <h3 class="detail-label">Highlights</h3>
+              <ul class="detail-list">
+                <li>User registration and authentication</li>
+                <li>Product listings with image uploads</li>
+                <li>Search, category filtering, and sorting</li>
+                <li>Messaging between buyers and sellers</li>
+                <li>Personal dashboard for managing listings</li>
+              </ul>
+
+              <h3 class="detail-label">Built with</h3>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">Django</li>
+                <li class="tag">Python</li>
+                <li class="tag">Tailwind CSS</li>
+                <li class="tag">MySQL</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- ============ HONEY, I'M HOME ============ -->
+          <article class="project reveal" id="honey-im-home">
+            <figure class="project-media">
+              <img src="images/project-2.jpg" alt="Honey, I'm Home title screen" width="1600" height="900" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <p class="project-kicker">Game prototype</p>
+              <h2>Honey, I'm Home</h2>
+              <p class="project-summary">
+                A first-person psychological horror game where the player completes chores, solves
+                puzzles, and looks for a way out of a house while avoiding a dangerous stalker. The
+                PS1-inspired low-poly look keeps the focus on atmosphere and tension rather than
+                detail.
+              </p>
+
+              <h3 class="detail-label">Highlights</h3>
+              <ul class="detail-list">
+                <li>First-person exploration</li>
+                <li>Task-based gameplay and puzzles</li>
+                <li>Stalker encounters and stealth</li>
+                <li>Retro low-poly 3D environments</li>
+                <li>Atmospheric lighting and sound</li>
+              </ul>
+
+              <h3 class="detail-label">Built with</h3>
+              <ul class="tag-list" aria-label="Tools used">
+                <li class="tag">Godot</li>
+                <li class="tag">GDScript</li>
+                <li class="tag">Blender</li>
+                <li class="tag">3D Level Design</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- ============ AI CAREER ASSESSMENT ============ -->
+          <article class="project reveal" id="career-assessment">
+            <figure class="project-media">
+              <img src="images/project-3.png" alt="TechPath AI career assessment screen flow" width="1653" height="553" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <p class="project-kicker">Research project</p>
+              <h2>AI-Powered IT Career Assessment</h2>
+              <p class="project-summary">
+                A system concept that helps IT students find likely career paths from their interests,
+                skills, and knowledge &mdash; then connects the results to relevant job opportunities.
+                The screen flow maps the whole journey from sign-up and verification to the assessment
+                and matched roles.
+              </p>
+
+              <h3 class="detail-label">Planned features</h3>
+              <ul class="detail-list">
+                <li>Interactive IT career assessment</li>
+                <li>Personalised career recommendations</li>
+                <li>Skill evaluation with suggested areas to improve</li>
+                <li>Mapping of results to real job openings</li>
+                <li>AI-assisted interpretation of answers</li>
+              </ul>
+
+              <h3 class="detail-label">Built with</h3>
+              <ul class="tag-list" aria-label="Tools and skills">
+                <li class="tag">Artificial Intelligence</li>
+                <li class="tag">Research</li>
+                <li class="tag">UI Design</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <section class="wrap">
+          <div class="cta reveal">
+            <div>
+              <h2>Want the longer version?</h2>
+              <p>I'm happy to walk through the design decisions, the problems I ran into, or what I'd change next.</p>
+            </div>
+            <a class="btn" href="contact.html">
+              Ask me about it
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <p>&copy; <span class="year">2026</span> Cedric John Raven Mandawe</p>
+          <p>
+            <a href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+            &middot;
+            <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

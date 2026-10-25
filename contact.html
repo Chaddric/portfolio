@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Cedric Mandawe</title>
+  <meta name="description" content="Contact Cedric Mandawe, a fourth-year IT student at Cebu Eastern College, for internship opportunities, projects, or questions.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('ced-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-top">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">CM</span>
+          <span class="brand-text">
+            <strong>Ced</strong>
+            <small>BSIT &middot; 4th year</small>
+          </span>
+        </a>
+
+        <div class="side-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.1"/><path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 14.3A8.4 8.4 0 0 1 9.7 3.9a8.5 8.5 0 1 0 10.4 10.4Z"/></svg>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="side-nav" aria-label="Open menu">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="side-nav" id="side-nav" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html"><span class="n">01</span>Home</a></li>
+          <li><a class="nav-link" href="about.html"><span class="n">02</span>About</a></li>
+          <li><a class="nav-link" href="projects.html"><span class="n">03</span>Projects</a></li>
+          <li><a class="nav-link" href="contact.html"><span class="n">04</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="side-foot">
+        <p class="availability"><span class="pulse-dot" aria-hidden="true"></span>Open to internships</p>
+        <a class="side-email" href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+        <div class="side-links">
+          <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="side-fine">&copy; <span class="year">2026</span> Cedric Mandawe</p>
+      </div>
+    </aside>
+
+    <div class="main">
+      <main id="main">
+        <section class="page-hero">
+          <div class="wrap">
+            <p class="eyebrow">Contact</p>
+            <h1 class="page-title">Let's build something.</h1>
+            <p class="page-lead">
+              I'm looking for an internship where I can contribute and keep learning. If you have an
+              opening, a project, or advice worth hearing, send me a message.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="wrap contact-grid">
+            <!-- ============ DETAILS ============ -->
+            <div class="contact-details reveal">
+              <h2 class="column-title">Direct contact</h2>
+
+              <a class="big-email" href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="label">Location</span>
+                  <span>Cebu City, Philippines &middot; PHT (UTC+8)</span>
+                </li>
+                <li>
+                  <span class="label">Availability</span>
+                  <span>Open to internships &amp; remote work</span>
+                </li>
+                <li>
+                  <span class="label">GitHub</span>
+                  <a href="https://github.com/Chaddric" target="_blank" rel="noopener">github.com/Chaddric</a>
+                </li>
+                <li>
+                  <span class="label">LinkedIn</span>
+                  <span>CJR Mandawe</span>
+                </li>
+                <li>
+                  <span class="label">Languages</span>
+                  <span>English &middot; Filipino &middot; Cebuano</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ============ FORM ============ -->
+            <div class="contact-form-wrap reveal">
+              <h2 class="column-title">Send a message</h2>
+
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="field">
+                  <label for="name">Your name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+                </div>
+
+                <div class="field">
+                  <label for="email">Your email</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject">
+                    <option value="Internship opportunity">Internship opportunity</option>
+                    <option value="Project collaboration">Project collaboration</option>
+                    <option value="Question about a project">Question about a project</option>
+                    <option value="Feedback">Feedback on the site</option>
+                    <option value="Something else">Something else</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Hi Ced, I saw your portfolio and wanted to ask about…"></textarea>
+                </div>
+
+                <button class="btn btn-full" type="submit">
+                  Open in email app
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+                </button>
+
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+                <p class="form-hint">
+                  This form doesn't send anything from the website. It opens your own email app with the
+                  message filled in, so you can check it before sending &mdash; and no personal data is
+                  stored anywhere.
+                </p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ QUICK ANSWERS ============ -->
+        <section class="section section-alt">
+          <div class="wrap">
+            <div class="section-head reveal">
+              <div>
+                <span class="section-kicker">Before you write</span>
+                <h2 class="section-title">Quick answers</h2>
+              </div>
+            </div>
+
+            <div class="qa-grid">
+              <div class="qa reveal">
+                <h3>Are you available for an internship?</h3>
+                <p>Yes. I'm in my fourth year and looking for a software development internship where I can contribute and learn.</p>
+              </div>
+              <div class="qa reveal">
+                <h3>What can you work with today?</h3>
+                <p>C and C++, plus Godot and Blender for 3D and game work. I'm actively adding to that list.</p>
+              </div>
+              <div class="qa reveal">
+                <h3>Where are you based?</h3>
+                <p>Cebu City, Philippines (PHT, UTC+8). I'm open to remote work and to working on site nearby.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <p>&copy; <span class="year">2026</span> Cedric John Raven Mandawe</p>
+          <p>
+            <a href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+            &middot;
+            <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

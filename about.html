@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Cedric Mandawe</title>
+  <meta name="description" content="About Cedric Mandawe: a fourth-year BS Information Technology student at Cebu Eastern College, interested in software development, AI, and game development.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('ced-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-top">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">CM</span>
+          <span class="brand-text">
+            <strong>Ced</strong>
+            <small>BSIT &middot; 4th year</small>
+          </span>
+        </a>
+
+        <div class="side-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.1"/><path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 14.3A8.4 8.4 0 0 1 9.7 3.9a8.5 8.5 0 1 0 10.4 10.4Z"/></svg>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="side-nav" aria-label="Open menu">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="side-nav" id="side-nav" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html"><span class="n">01</span>Home</a></li>
+          <li><a class="nav-link" href="about.html"><span class="n">02</span>About</a></li>
+          <li><a class="nav-link" href="projects.html"><span class="n">03</span>Projects</a></li>
+          <li><a class="nav-link" href="contact.html"><span class="n">04</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="side-foot">
+        <p class="availability"><span class="pulse-dot" aria-hidden="true"></span>Open to internships</p>
+        <a class="side-email" href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+        <div class="side-links">
+          <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="side-fine">&copy; <span class="year">2026</span> Cedric Mandawe</p>
+      </div>
+    </aside>
+
+    <div class="main">
+      <main id="main">
+        <section class="page-hero">
+          <div class="wrap">
+            <p class="eyebrow">About</p>
+            <h1 class="page-title">A student developer who learns by doing.</h1>
+            <p class="page-lead">
+              I'm Cedric &mdash; a fourth-year IT student in Cebu City. I like understanding how things
+              work, then building a version of my own.
+            </p>
+          </div>
+        </section>
+
+        <!-- ================= BACKGROUND ================= -->
+        <section class="section">
+          <div class="wrap about-grid">
+            <h2 class="column-title reveal">Background</h2>
+            <div class="prose reveal">
+              <p>
+                I'm taking up <strong>BS Information Technology at Cebu Eastern College</strong>, now in
+                my fourth year. My main interests are artificial intelligence and software development,
+                and I enjoy the part of a project where an idea stops being a concept and starts
+                actually running.
+              </p>
+              <p>
+                I learn by experimenting. When I pick up a new tool, I usually build something small
+                with it first &mdash; a scene in Godot, an asset in Blender, a program in C or C++. That
+                habit is how most of what I know was learned, and it's why I'd rather show a working
+                project than describe an imaginary one.
+              </p>
+              <p>
+                Right now I'm looking for an internship where I can work with a real team, contribute
+                to real projects, and keep improving as a developer.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section class="section section-alt">
+          <div class="wrap">
+            <div class="section-head reveal">
+              <div>
+                <span class="section-kicker">Skills</span>
+                <h2 class="section-title">What I work with</h2>
+                <p class="section-sub">
+                  Tools I've actually used, grouped by area &mdash; no percentages or rating bars.
+                </p>
+              </div>
+            </div>
+
+            <dl class="skill-rows reveal">
+              <div class="skill-row">
+                <dt>Programming</dt>
+                <dd>
+                  <span class="tag">C</span>
+                  <span class="tag">C++</span>
+                </dd>
+              </div>
+              <div class="skill-row">
+                <dt>Game development</dt>
+                <dd>
+                  <span class="tag">Godot</span>
+                  <span class="tag">Blender</span>
+                </dd>
+              </div>
+              <div class="skill-row">
+                <dt>Interests</dt>
+                <dd>
+                  <span class="tag">Artificial Intelligence</span>
+                  <span class="tag">Software Development</span>
+                </dd>
+              </div>
+              <div class="skill-row">
+                <dt>Languages spoken</dt>
+                <dd>
+                  <span class="tag">English</span>
+                  <span class="tag">Filipino</span>
+                  <span class="tag">Cebuano</span>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+        <section class="section">
+          <div class="wrap about-grid">
+            <h2 class="column-title reveal">Education</h2>
+            <div class="reveal">
+              <div class="milestones">
+                <div class="milestone">
+                  <span class="milestone-date">4th year</span>
+                  <div>
+                    <h3>BS Information Technology</h3>
+                    <p>
+                      Cebu Eastern College. Coursework covering programming, software development,
+                      databases, and game development.
+                    </p>
+                  </div>
+                </div>
+                <div class="milestone">
+                  <span class="milestone-date">Coursework</span>
+                  <div>
+                    <h3>Projects</h3>
+                    <p>
+                      A campus marketplace web application, a first-person horror game prototype, and
+                      an AI career-assessment research project &mdash; all detailed on the
+                      <a href="projects.html">projects page</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= LOOKING FOR ================= -->
+        <section class="section section-alt">
+          <div class="wrap about-grid">
+            <h2 class="column-title reveal">What I'm looking for</h2>
+            <div class="prose reveal">
+              <p>
+                An internship in software development where I can work on real features, learn from
+                people with more experience, and keep building. I'm based in Cebu City and open to
+                remote work.
+              </p>
+              <p>
+                If you have an opening, a project that needs an extra pair of hands, or simply advice
+                worth hearing, <a href="contact.html">my inbox is open</a>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= AI NOTE ================= -->
+        <section class="section">
+          <div class="wrap about-grid">
+            <h2 class="column-title reveal">How this site was made</h2>
+            <div class="prose reveal">
+              <p>
+                This is a hand-written static site: plain HTML for structure, one CSS file for
+                appearance, and a small JavaScript file for the mobile menu, theme switch, and form
+                behaviour. No framework and no build step, so it publishes directly with GitHub Pages.
+              </p>
+              <p>
+                <strong>AI tools used:</strong> AI assistance was used for the initial layout, styling,
+                and JavaScript. Each section was reviewed, the content written from my own experience,
+                and the pages tested at desktop and phone widths.
+              </p>
+              <p>
+                <strong>Images:</strong> the project images are screenshots from the actual projects.
+                The portrait photo is mine.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="wrap">
+          <div class="cta reveal">
+            <div>
+              <h2>Want to see the work?</h2>
+              <p>Three projects, with the features and tools behind each one.</p>
+            </div>
+            <a class="btn" href="projects.html">
+              Browse projects
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <p>&copy; <span class="year">2026</span> Cedric John Raven Mandawe</p>
+          <p>
+            <a href="mailto:cjrmandawe@gmail.com">cjrmandawe@gmail.com</a>
+            &middot;
+            <a href="https://github.com/Chaddric" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
